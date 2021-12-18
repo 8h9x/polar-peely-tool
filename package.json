@@ -1,0 +1,16 @@
+{
+  "name": "polar-peely-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "Distrust#0001",
+  "license": "ISC",
+  "dependencies": {
+    "undici": "^4.12.0"
+  }
+}
