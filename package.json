@@ -1,16 +1,13 @@
 {
-  "name": "polar-peely-tool",
+  "name": "polar-peely-claimer",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
-  "type": "module",
   "scripts": {
-    "start": "node main.js",
-    "dev": "nodemon main.js"
+    "start": "node main.js"
   },
   "author": "Distrust#0001",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "undici": "^4.12.0"
+    "undici": "^5.11.0"
   }
 }
