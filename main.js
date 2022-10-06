@@ -8,7 +8,7 @@ try {
     const { access_token, account_id } = await authenticate(code);
     const profile = await queryProfile(account_id, access_token);
     const items = profile.profileChanges[0].profile.items;
-    const rewardGraphId = items.find(item => item.templateId === "AthenaRewardGraph:s19_winterfest");
+    const rewardGraphId = Object.entries(items).find(([_key, value]) => value.templateId === "AthenaRewardGraph:s19_winterfest")[0];
     await claimPeelyReward(account_id, access_token, rewardGraphId);
     
     console.log("Successfully claimed the polar peely outfit!");
